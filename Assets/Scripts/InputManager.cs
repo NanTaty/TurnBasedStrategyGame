@@ -37,4 +37,9 @@ public class InputManager : MonoBehaviour
     {
         return inputSystem.Player.CameraZoom.ReadValue<float>();
     }
+
+    public Vector2 GetMouseScreenPosition()
+    {
+        return Mouse.current.position.ReadValue();
+    }
 }
