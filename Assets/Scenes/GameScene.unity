@@ -265,15 +265,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 430894, guid: f84507d8111aabf4c9b10e2297b3a4d3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 430894, guid: f84507d8111aabf4c9b10e2297b3a4d3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 430894, guid: f84507d8111aabf4c9b10e2297b3a4d3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 430894, guid: f84507d8111aabf4c9b10e2297b3a4d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -919,7 +919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930982210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4464425, y: -20.604944, z: 24.345064}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1084,7 +1084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1535112851}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1367,7 +1367,7 @@ PrefabInstance:
     - target: {fileID: 3076420258307299529, guid: 5b7d8fe5f70fbfc4eb3af2c77dee20e9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.24
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3076420258307299529, guid: 5b7d8fe5f70fbfc4eb3af2c77dee20e9,
         type: 3}
@@ -1377,7 +1377,7 @@ PrefabInstance:
     - target: {fileID: 3076420258307299529, guid: 5b7d8fe5f70fbfc4eb3af2c77dee20e9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.49
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3076420258307299529, guid: 5b7d8fe5f70fbfc4eb3af2c77dee20e9,
         type: 3}
