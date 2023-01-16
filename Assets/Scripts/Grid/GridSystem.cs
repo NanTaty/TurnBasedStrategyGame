@@ -81,4 +81,3 @@ public class GridSystem<TGridObject>
         return height;
     }
 }
-

@@ -1,3 +1,5 @@
+
+
 using System;
 
 public struct GridPosition  : IEquatable<GridPosition>
