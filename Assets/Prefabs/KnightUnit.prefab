@@ -609,7 +609,6 @@ GameObject:
   - component: {fileID: 2689829554893353401}
   - component: {fileID: 5247490714825163788}
   - component: {fileID: 4744889881985883050}
-  - component: {fileID: 659845707980234884}
   - component: {fileID: 8025202299605564668}
   - component: {fileID: 1894189911691918576}
   m_Layer: 7
@@ -635,7 +634,7 @@ Transform:
   - {fileID: 3383900675821825740}
   - {fileID: 5075205938574519290}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4905170426193025844
 MonoBehaviour:
@@ -676,6 +675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxMoveDistance: 5
+  isArcher: 0
 --- !u!114 &2689829554893353401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,11 +689,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 5500044881027661215}
-  bulletProjectilePrefab: {fileID: 3292473757591639867, guid: d4ff7c1c15ad9c64292a60e28058b3e7,
-    type: 3}
+  arrowProjectilePrefab: {fileID: 0}
   shootPoint: {fileID: 3260917288425052032}
-  rifleTransform: {fileID: 5806559333982000843}
-  swordTransform: {fileID: 5130239015877745627}
 --- !u!114 &5247490714825163788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -706,7 +703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520b1f2644c7ae441af7811f32abcd2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 300
 --- !u!114 &4744889881985883050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,20 +719,6 @@ MonoBehaviour:
   ragdollPrefab: {fileID: 2062940026261948701, guid: 74854e290dfc4004f9073005cf3084e9,
     type: 3}
   originalRootBone: {fileID: 5555149905251943793}
---- !u!114 &659845707980234884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4905170426193025845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c24173127034cc9408d26675b521116a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grenadeProjectilePrefab: {fileID: 7411839996155145570, guid: cf38f64c2486a5042a07fc0660726f8a,
-    type: 3}
 --- !u!114 &8025202299605564668
 MonoBehaviour:
   m_ObjectHideFlags: 0

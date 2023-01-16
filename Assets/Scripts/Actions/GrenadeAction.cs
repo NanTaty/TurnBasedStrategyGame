@@ -22,7 +22,12 @@ public class GrenadeAction : BaseAction
     {
         return "Grenade";
     }
-    
+
+    public override int GetActionPointsCost()
+    {
+        return 2;
+    }
+
 
     public override List<GridPosition> GetValidActionGridPositionList()
     {

@@ -645,7 +645,7 @@ Transform:
   - {fileID: 1194782402119294715}
   - {fileID: 8650428718969969613}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8822575293686983427
 MonoBehaviour:
@@ -686,6 +686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxMoveDistance: 3
+  isArcher: 1
 --- !u!114 &1684009946761521426
 MonoBehaviour:
   m_ObjectHideFlags: 0

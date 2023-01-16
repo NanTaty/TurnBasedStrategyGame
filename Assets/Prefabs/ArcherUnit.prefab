@@ -581,6 +581,7 @@ GameObject:
   - component: {fileID: 1279450956077529456}
   - component: {fileID: 8955233481308998853}
   - component: {fileID: 8452280488572621667}
+  - component: {fileID: 2041276257802801354}
   - component: {fileID: 3376635218836157497}
   m_Layer: 7
   m_Name: ArcherUnit
@@ -646,6 +647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxMoveDistance: 5
+  isArcher: 0
 --- !u!114 &2137456682716877292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,8 +679,6 @@ MonoBehaviour:
   arrowProjectilePrefab: {fileID: 3292473757591639867, guid: d4ff7c1c15ad9c64292a60e28058b3e7,
     type: 3}
   shootPoint: {fileID: 3074413933874365205}
-  rifleTransform: {fileID: 8629454126545178974}
-  swordTransform: {fileID: 0}
 --- !u!114 &8955233481308998853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,7 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520b1f2644c7ae441af7811f32abcd2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 160
 --- !u!114 &8452280488572621667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,6 +707,20 @@ MonoBehaviour:
   ragdollPrefab: {fileID: 2062940026261948701, guid: 74854e290dfc4004f9073005cf3084e9,
     type: 3}
   originalRootBone: {fileID: 7545396171754903812}
+--- !u!114 &2041276257802801354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108483621837837308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c24173127034cc9408d26675b521116a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grenadeProjectilePrefab: {fileID: 7411839996155145570, guid: cf38f64c2486a5042a07fc0660726f8a,
+    type: 3}
 --- !u!114 &3376635218836157497
 MonoBehaviour:
   m_ObjectHideFlags: 0
