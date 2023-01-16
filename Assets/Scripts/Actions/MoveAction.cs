@@ -9,6 +9,7 @@ public class MoveAction : BaseAction
     public event EventHandler OnStopMoving;
     
     [SerializeField] private int maxMoveDistance = 5;
+    [SerializeField] private bool isArcher;
     
     private List<Vector3> positionList;
     private int currentPositionIndex;
@@ -126,12 +127,27 @@ public class MoveAction : BaseAction
     
     public override EnemyAIAction GetEnemyAIAction(GridPosition gridPosition)
     {
-        int targetCountAtGridPosition = unit.GetAction<SwordAction>().GetTargetCountAtPosition(gridPosition);
-        
-        return new EnemyAIAction()
+
+        if (isArcher)
         {
-            gridPosition = gridPosition,
-            actionValue = targetCountAtGridPosition * 10,
-        };
+            int targetCountAtGridPosition = unit.GetAction<ShootAction>().GetTargetCountAtPosition(gridPosition);
+            return new EnemyAIAction()
+            {
+                gridPosition = gridPosition,
+                actionValue = targetCountAtGridPosition * 10,
+            };
+        }
+        else
+        {
+            int targetCountAtGridPosition = unit.GetAction<SwordAction>().GetTargetCountAtPosition(gridPosition);
+            return new EnemyAIAction()
+            {
+                gridPosition = gridPosition,
+                actionValue = targetCountAtGridPosition * 10,
+            };
+        }
+        
+        
+        
     }
 }

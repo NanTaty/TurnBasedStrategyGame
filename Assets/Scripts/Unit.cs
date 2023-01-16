@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    private const int ACTION_POINTS_MAX = 7;
+    private const int ACTION_POINTS_MAX = 3;
 
     public static event EventHandler OnAnyActionPointsChanged;
     public static event EventHandler OnAnyUnitSpawned;
     public static event EventHandler OnAnyUnitDead;
 
     [SerializeField] private bool isEnemy;
-    
+
     private GridPosition gridPosition;
     private HealthSystem healthSystem;
     private BaseAction[] baseActionArray;
