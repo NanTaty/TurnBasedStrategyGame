@@ -606,7 +606,7 @@ Transform:
   - {fileID: 1901561222417573381}
   - {fileID: 8285344094589608755}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8108483621837837309
 MonoBehaviour:
@@ -704,7 +704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea8a313675a25544837efe7f40b8d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ragdollPrefab: {fileID: 2062940026261948701, guid: 74854e290dfc4004f9073005cf3084e9,
+  ragdollPrefab: {fileID: 3256535889970486204, guid: 6e71159617b8097429e739ee7631ac5c,
     type: 3}
   originalRootBone: {fileID: 7545396171754903812}
 --- !u!114 &2041276257802801354

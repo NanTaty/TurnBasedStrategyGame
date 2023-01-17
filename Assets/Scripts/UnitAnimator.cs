@@ -28,6 +28,16 @@ public class UnitAnimator : MonoBehaviour
         {
             swordAction.OnSwordActionStarted += SwordAction_OnSwordActionStarted;
         }
+
+        if (TryGetComponent<HeavySlashAction>(out HeavySlashAction heavySlashAction))
+        {
+            heavySlashAction.OnHeavySlashActionStarted += HeavySlashAction_OnHeavySlashActionStarted;
+        }
+    }
+
+    private void HeavySlashAction_OnHeavySlashActionStarted(object sender, EventArgs e)
+    {
+        animator.SetTrigger("HeavySlash");
     }
 
     private void ShootAction_OnDrawBow(object sender, EventArgs e)

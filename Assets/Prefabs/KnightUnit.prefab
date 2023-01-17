@@ -610,6 +610,7 @@ GameObject:
   - component: {fileID: 5247490714825163788}
   - component: {fileID: 4744889881985883050}
   - component: {fileID: 8025202299605564668}
+  - component: {fileID: 8145236778701472769}
   - component: {fileID: 1894189911691918576}
   m_Layer: 7
   m_Name: KnightUnit
@@ -634,7 +635,7 @@ Transform:
   - {fileID: 3383900675821825740}
   - {fileID: 5075205938574519290}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4905170426193025844
 MonoBehaviour:
@@ -716,7 +717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea8a313675a25544837efe7f40b8d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ragdollPrefab: {fileID: 2062940026261948701, guid: 74854e290dfc4004f9073005cf3084e9,
+  ragdollPrefab: {fileID: 4905170426193025847, guid: 6c227f343c822b04e99cb904f2b19374,
     type: 3}
   originalRootBone: {fileID: 5555149905251943793}
 --- !u!114 &8025202299605564668
@@ -729,6 +730,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18cc5246d8afa934ea68eedbd8a119f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8145236778701472769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4905170426193025845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 312bdc68e7b742e4585a9fd1f493bc0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1894189911691918576

@@ -5928,11 +5928,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 384216784095609309, guid: 5ad80ae5ba9e69541a89e1e6126c8df0,
-        type: 3}
-      propertyPath: isArcher
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8822575293686983424, guid: 5ad80ae5ba9e69541a89e1e6126c8df0,
         type: 3}
       propertyPath: m_RootOrder
@@ -5992,11 +5987,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkeletonArcher
-      objectReference: {fileID: 0}
-    - target: {fileID: 8822575293686983427, guid: 5ad80ae5ba9e69541a89e1e6126c8df0,
-        type: 3}
-      propertyPath: isArcher
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

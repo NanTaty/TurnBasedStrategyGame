@@ -33,13 +33,13 @@ PrefabInstance:
         type: 3}
       propertyPath: ragdollPrefab
       value: 
-      objectReference: {fileID: 5462568751834659191, guid: 210a48d59c657d747b619bd1c0be06f5,
+      objectReference: {fileID: 2114113452418871621, guid: d27994d448d43754aa595617904999d5,
         type: 3}
     - target: {fileID: 1831451780629055872, guid: 96d990071aa86aa4885b278ae1f96a49,
         type: 3}
       propertyPath: originalRootBone
       value: 
-      objectReference: {fileID: 1662611491946649333}
+      objectReference: {fileID: 7364938910674699579}
     - target: {fileID: 2062940026261948701, guid: 96d990071aa86aa4885b278ae1f96a49,
         type: 3}
       propertyPath: m_RootOrder
@@ -118,12 +118,6 @@ PrefabInstance:
       insertIndex: 0
       addedObject: {fileID: 7362035168538515329}
   m_SourcePrefab: {fileID: 100100000, guid: 96d990071aa86aa4885b278ae1f96a49, type: 3}
---- !u!4 &1662611491946649333 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1559504333050845019, guid: 96d990071aa86aa4885b278ae1f96a49,
-    type: 3}
-  m_PrefabInstance: {fileID: 195537948724937134}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2168405964177049779 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2062940026261948701, guid: 96d990071aa86aa4885b278ae1f96a49,
@@ -295,6 +289,12 @@ Transform:
 --- !u!4 &7362062648000614749 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4416568810194774, guid: f6362dc4479aaf549a3fdaedef699623,
+    type: 3}
+  m_PrefabInstance: {fileID: 7360284907466216971}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7364938910674699579 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4917889757254448, guid: f6362dc4479aaf549a3fdaedef699623,
     type: 3}
   m_PrefabInstance: {fileID: 7360284907466216971}
   m_PrefabAsset: {fileID: 0}
