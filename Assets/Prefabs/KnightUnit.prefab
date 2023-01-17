@@ -611,7 +611,6 @@ GameObject:
   - component: {fileID: 4744889881985883050}
   - component: {fileID: 8025202299605564668}
   - component: {fileID: 8145236778701472769}
-  - component: {fileID: 1894189911691918576}
   m_Layer: 7
   m_Name: KnightUnit
   m_TagString: Untagged
@@ -635,7 +634,7 @@ Transform:
   - {fileID: 3383900675821825740}
   - {fileID: 5075205938574519290}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4905170426193025844
 MonoBehaviour:
@@ -742,18 +741,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 312bdc68e7b742e4585a9fd1f493bc0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1894189911691918576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4905170426193025845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dbe43fa45f64dd459db3d43bb78fadd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5182080657440843249

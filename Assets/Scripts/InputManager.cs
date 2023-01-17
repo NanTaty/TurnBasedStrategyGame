@@ -1,4 +1,5 @@
 #define USE_NEW_INPUT_SYSTEM
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,12 +25,21 @@ public class InputManager : MonoBehaviour
         playerInputActions.Player.Enable();
     }
     
+
     public Vector2 GetMouseScreenPosition()
     {
 #if USE_NEW_INPUT_SYSTEM
         return Mouse.current.position.ReadValue();
 #else
         return Input.mousePosition;
+#endif
+    }
+
+    public bool isEscapeButtonPressed()
+    {
+#if USE_NEW_INPUT_SYSTEM
+
+        return playerInputActions.Player.PauseMenu.WasPressedThisFrame();
 #endif
     }
 

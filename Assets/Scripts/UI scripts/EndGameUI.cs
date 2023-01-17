@@ -9,18 +9,25 @@ using UnityEngine.UI;
 public class EndGameUI : MonoBehaviour
 {
     [SerializeField] private int enemiesRemaining;
+    [SerializeField] private int squadMembersRemaining;
     [SerializeField] private Button returnToMenuButton;
-    [SerializeField] private TextMeshProUGUI endGameText;
+    [SerializeField] private Button restartLevelButton;
     [SerializeField] private GameObject endGameUI;
+    [SerializeField] private GameObject gameOverUI;
     void Start()
     {
         Unit.OnAnyUnitDead += Unit_OnAnyUnitDead;
-        Debug.Log(enemiesRemaining);
         endGameUI.SetActive(false);
+        gameOverUI.SetActive(false);
         
         returnToMenuButton.onClick.AddListener(() =>
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
+        });
+        
+        restartLevelButton.onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         });
         
     }
@@ -44,6 +51,14 @@ public class EndGameUI : MonoBehaviour
             if (enemiesRemaining <= 0)
             {
                 endGameUI.SetActive(true);
+            }
+        }
+        else
+        {
+            squadMembersRemaining--;
+            if (squadMembersRemaining <= 0)
+            {
+                gameOverUI.SetActive(true);
             }
         }
     }

@@ -582,7 +582,6 @@ GameObject:
   - component: {fileID: 8955233481308998853}
   - component: {fileID: 8452280488572621667}
   - component: {fileID: 2041276257802801354}
-  - component: {fileID: 3376635218836157497}
   m_Layer: 7
   m_Name: ArcherUnit
   m_TagString: Untagged
@@ -606,7 +605,7 @@ Transform:
   - {fileID: 1901561222417573381}
   - {fileID: 8285344094589608755}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8108483621837837309
 MonoBehaviour:
@@ -721,18 +720,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grenadeProjectilePrefab: {fileID: 7411839996155145570, guid: cf38f64c2486a5042a07fc0660726f8a,
     type: 3}
---- !u!114 &3376635218836157497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8108483621837837308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dbe43fa45f64dd459db3d43bb78fadd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8322588897068723512
 GameObject:
   m_ObjectHideFlags: 0

@@ -71,6 +71,15 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""PauseMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""f9c2ecab-ddad-484d-a6d6-b2f1c0789be5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -194,6 +203,17 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""action"": ""ClickRightMouseButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""edc068f1-3a6e-4045-813b-3621ca91dc20"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PauseMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -207,6 +227,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_Player_CameraZoom = m_Player.FindAction("CameraZoom", throwIfNotFound: true);
         m_Player_ClickLeftMouseButton = m_Player.FindAction("ClickLeftMouseButton", throwIfNotFound: true);
         m_Player_ClickRightMouseButton = m_Player.FindAction("ClickRightMouseButton", throwIfNotFound: true);
+        m_Player_PauseMenu = m_Player.FindAction("PauseMenu", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -271,6 +292,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_CameraZoom;
     private readonly InputAction m_Player_ClickLeftMouseButton;
     private readonly InputAction m_Player_ClickRightMouseButton;
+    private readonly InputAction m_Player_PauseMenu;
     public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -280,6 +302,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         public InputAction @CameraZoom => m_Wrapper.m_Player_CameraZoom;
         public InputAction @ClickLeftMouseButton => m_Wrapper.m_Player_ClickLeftMouseButton;
         public InputAction @ClickRightMouseButton => m_Wrapper.m_Player_ClickRightMouseButton;
+        public InputAction @PauseMenu => m_Wrapper.m_Player_PauseMenu;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -304,6 +327,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @ClickRightMouseButton.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnClickRightMouseButton;
                 @ClickRightMouseButton.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnClickRightMouseButton;
                 @ClickRightMouseButton.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnClickRightMouseButton;
+                @PauseMenu.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPauseMenu;
+                @PauseMenu.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPauseMenu;
+                @PauseMenu.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPauseMenu;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -323,6 +349,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @ClickRightMouseButton.started += instance.OnClickRightMouseButton;
                 @ClickRightMouseButton.performed += instance.OnClickRightMouseButton;
                 @ClickRightMouseButton.canceled += instance.OnClickRightMouseButton;
+                @PauseMenu.started += instance.OnPauseMenu;
+                @PauseMenu.performed += instance.OnPauseMenu;
+                @PauseMenu.canceled += instance.OnPauseMenu;
             }
         }
     }
@@ -334,5 +363,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         void OnCameraZoom(InputAction.CallbackContext context);
         void OnClickLeftMouseButton(InputAction.CallbackContext context);
         void OnClickRightMouseButton(InputAction.CallbackContext context);
+        void OnPauseMenu(InputAction.CallbackContext context);
     }
 }
